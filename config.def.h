@@ -180,6 +180,7 @@ static const Rule rules[] = {
 	RULE(.class = "Firefox", .tags = 1 << 1)
 	RULE(.class = "Brave-browser", .tags = 1 << 1)
 	RULE(.class = "LibreWolf", .tags = 1 << 1)
+	RULE(.class = "firefox", .tags = 1 << 1)
 	RULE(.class = "qutebrowser", .tags = 1 << 1)
 	RULE(.class = "Code", .tags = 1 << 2)
 	RULE(.class = "jetbrains-studio", .tags = 1 << 2)
@@ -347,7 +348,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_f,          setlayout,              {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_m,          setlayout,              {.v = &layouts[2]} },
 	{ MODKEY|ShiftMask,             XK_space,      setlayout,              {0} },
-	{ MODKEY|ShiftMask,             XK_space,      togglefloating,         {0} },
+	{ MODKEY, 	                XK_space,      togglefloating,         {0} },
 	/*
 	{ MODKEY|ControlMask|ShiftMask, XK_h,          togglehorizontalmax,    {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_l,          togglehorizontalmax,    {0} },
